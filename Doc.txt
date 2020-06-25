@@ -1,0 +1,40 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Classi6
+{
+    class XXX : Valuta - здесь можно заменить XXX на название вашей валюты, желательно 3 буквы английского алфавита 
+    {
+
+        double curs = X; - здесь X - отношение цены вашей валюты к доллару
+        double x; // кол-во денег
+        public XXX(double x)  - здесь нужно заменить XXX на название валюты, которую вы ввели сверху 
+        {
+            X = x;
+
+        }
+        public double X
+        {
+            get
+            {
+                return x;
+            }
+            set
+            {
+
+                this.x = value;
+
+            }
+        }
+        public override double Change()
+        {
+            return x * curs;
+        }
+        public override double BackChange(double y)
+        {
+            //x = y / curs;
+            return y / curs;
+        }
+    }
+    }
