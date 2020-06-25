@@ -4,8 +4,11 @@ using System.Text;
 
 namespace Classi6
 {
-    class Valuta
+    abstract class Valuta
     {
-        
+        public abstract double Change();
+        public abstract double BackChange(double y);
+
+
     }
 }

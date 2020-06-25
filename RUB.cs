@@ -4,12 +4,11 @@ using System.Text;
 
 namespace Classi6
 {
-    class USD : Valuta
+    class RUB : Valuta
     {
-
-        double curs = 1;
+        double curs = 1.5;
         double x; // кол-во денег
-        public USD(double x)
+        public RUB(double x)
         {
             X = x;
 
@@ -37,6 +36,5 @@ namespace Classi6
             return y / curs;
         }
     }
-    }
-
-
+        
+}
