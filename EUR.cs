@@ -6,7 +6,7 @@ namespace Classi6
 {
     class EUR : Valuta
     {
-        double curs = 1.5;
+        double curs = 1.2;
         double x; // кол-во денег
         public EUR(double x)
         {

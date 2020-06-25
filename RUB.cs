@@ -6,7 +6,7 @@ namespace Classi6
 {
     class RUB : Valuta
     {
-        double curs = 1.5;
+        double curs = 0.014;
         double x; // кол-во денег
         public RUB(double x)
         {
