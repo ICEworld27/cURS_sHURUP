@@ -13,27 +13,30 @@ namespace Classi6
             int d = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Евро: ");
             int e = Convert.ToInt32(Console.ReadLine());
-            Valuta a = new EUR(e);
-            Valuta b = new RUB(r);
-            Valuta c=  new USD(d);
-            Console.WriteLine("Выберите валюту для перевода \n1 - Рубли\n2 - Доллары\n3 - Рубли");
+            EUR a = new EUR(e);
+            RUB b = new RUB(r);
+            USD c=  new USD(d);
+            Console.WriteLine("Выберите валюту для перевода \n1 - Рубли\n2 - Доллары\n3 - Евро");
             int v = Convert.ToInt32(Console.ReadLine());
             double res;
             if (v == 1)
             {
-                res = a.BackChange(a.Change() + b.Change() + c.Change());
+                b.Add(a); b.Add(c);
+                res =b.X;
             }
             else
             {
                 if (v == 2)
                 {
-                    res = b.BackChange(a.Change() + b.Change() + c.Change());
+                    c.Add(a); c.Add(b);
+                    res = c.X;
                 }
                 else
                 {
                     if (v == 3)
                     {
-                        res = c.BackChange(a.Change() + b.Change() + c.Change());
+                        a.Add(c); a.Add(b);
+                        res = a.X;
                     }
                     else
                     {

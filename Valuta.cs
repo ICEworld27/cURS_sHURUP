@@ -8,6 +8,7 @@ namespace Classi6
     {
         public abstract double Change();
         public abstract double BackChange(double y);
+        public abstract void Add(Valuta v);
 
 
     }

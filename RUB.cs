@@ -32,8 +32,13 @@ namespace Classi6
         }
         public override double BackChange(double y)
         {
-            //x = y / curs;
+            x = y / curs;
             return y / curs;
+        }
+        public override void Add(Valuta v)
+        {
+
+            x += v.Change() * curs;
         }
     }
         
