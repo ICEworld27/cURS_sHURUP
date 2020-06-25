@@ -33,7 +33,7 @@ namespace Classi6
         }
         public override double BackChange(double y)
         {
-            x = y / curs;
+            //x = y / curs;
             return y / curs;
         }
     }
