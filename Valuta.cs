@@ -7,7 +7,7 @@ namespace Classi6
     abstract class Valuta
     {
         public abstract double Curs();
-        public virtual double X
+        public  abstract double X
         {
             get
             {
