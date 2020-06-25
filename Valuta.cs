@@ -7,7 +7,11 @@ namespace Classi6
     abstract class Valuta
     {
         public abstract double Curs();
-        public  abstract double X;
+                public  abstract double X
+        {
+            get;
+            set;
+        }
         public abstract double Change();
         public double BackChange(double y, Valuta v)
         {
