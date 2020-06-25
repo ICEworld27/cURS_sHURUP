@@ -14,7 +14,15 @@ namespace Classi6
             X = x;
 
         }
-        public double X
+        public override double Curs()
+        {
+            return curs;
+        }
+        public override double Change()
+        {
+            return x * curs;
+        }
+        public override double X
         {
             get
             {
@@ -26,20 +34,6 @@ namespace Classi6
                 this.x = value;
 
             }
-        }
-        public override double Change()
-        {
-            return x * curs;
-        }
-        public override double BackChange(double y)
-        {
-            x = y / curs;
-            return y / curs;
-        }
-        public override void Add(Valuta v)
-        {
-
-            x += v.Change() * curs;
         }
     }
     }
